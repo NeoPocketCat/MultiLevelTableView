@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1A99804FEE598E062C2614A9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9985FD32FC316CD8A59C45 /* MainViewController.m */; };
+		1A998174EFD2CBF52D2E4CD1 /* TreeLayerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998FDDCCC06A06F6B3C417 /* TreeLayerCollectionView.m */; };
+		1A99819F76FD58F7669B7BBA /* TreeLayerCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A99807216BB0148E84F5AD0 /* TreeLayerCollectionViewLayoutAttributes.m */; };
 		1A9982DAACE33799DE6C9EEB /* TreeDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9983FB25EB9FA5B13029A3 /* TreeDataConverter.m */; };
 		1A99837184029E5983A252F2 /* TreeMapGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998A06DDBC79711202B089 /* TreeMapGridView.m */; };
+		1A9983F42279B3186604B827 /* TreeLayerGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998A87726C780D4FF5E2B6 /* TreeLayerGridView.m */; };
+		1A9984577FB6E1E1F08C7423 /* TreeLayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998E6DB4A9CD4F307F37FD /* TreeLayerDemoViewController.m */; };
+		1A9985372DE26224B053A042 /* TreeLayerGridLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998D01D62C4F9056520A3C /* TreeLayerGridLocation.m */; };
 		1A99858B60ABBFF87C693342 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998CC2E26931EECAD67889 /* TreeNode.m */; };
+		1A9986FCCCCB9F5B8D4F6649 /* TreeLayerGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9981FE24B037B595C7485B /* TreeLayerGridCell.m */; };
 		1A9988201FBB6F46D27D48B7 /* TreeTableDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998C2BE3B228EB0FAAA63E /* TreeTableDemoViewController.m */; };
 		1A9988850F22A5F6F7E4E542 /* TreeMapGridDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998ACB0E7E4282BBD5EF17 /* TreeMapGridDemoViewController.m */; };
 		1A9988E766DA504AD6BBAA0C /* _TreeInnerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998987B08245D9FFEEEACC /* _TreeInnerTableView.m */; };
 		1A998B19F8AB2E771368F7F9 /* TreeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998F37ECB4044D58B75321 /* TreeTableView.m */; };
 		1A998B6E59BF2D4E61F52738 /* TreeMapGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9980561441B7321F0F80E4 /* TreeMapGridLayout.m */; };
 		1A998C55C6B0A6F22AE11792 /* DemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998CD5AAD5F63F8A1E4FA1 /* DemoView.m */; };
+		1A998DE26FBB790EA7849C4F /* TreeLayerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998779483F20DC1A57D629 /* TreeLayerLayout.m */; };
 		1A998F65087D4E16990F5A52 /* TreeMapGridCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9985170A12F5987281F41C /* TreeMapGridCollectionView.m */; };
+		1A998F72B98DFD05B2A702F3 /* TreeLayerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A998B6307C3F021B7680095 /* TreeLayerCollectionViewCell.m */; };
 		B5AC12F61E93EC2C00340856 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC12F51E93EC2C00340856 /* main.m */; };
 		B5AC12F91E93EC2C00340856 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC12F81E93EC2C00340856 /* AppDelegate.m */; };
 		B5AC12FC1E93EC2C00340856 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC12FB1E93EC2C00340856 /* ViewController.m */; };
@@ -26,27 +34,43 @@
 
 /* Begin PBXFileReference section */
 		1A9980561441B7321F0F80E4 /* TreeMapGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeMapGridLayout.m; sourceTree = "<group>"; };
+		1A99807216BB0148E84F5AD0 /* TreeLayerCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		1A9980B3570D9AC5395AE66E /* TreeLayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerDemoViewController.h; sourceTree = "<group>"; };
 		1A99813556FAF2AEBAD9EB6B /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
 		1A998157A5189CFC86D6AE62 /* _TreeInnerTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TreeInnerTableView.h; sourceTree = "<group>"; };
 		1A9981884FFB4CDD8A06EC5D /* TreeMapGridDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeMapGridDemoViewController.h; sourceTree = "<group>"; };
+		1A99819F5BAD7C2225377F9D /* TreeLayerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerLayout.h; sourceTree = "<group>"; };
+		1A9981FE24B037B595C7485B /* TreeLayerGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerGridCell.m; sourceTree = "<group>"; };
 		1A998372215EFD191A42E2CE /* TreeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableView.h; sourceTree = "<group>"; };
 		1A9983FB25EB9FA5B13029A3 /* TreeDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeDataConverter.m; sourceTree = "<group>"; };
 		1A9984333FB541BE63A168AE /* TreeMapGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeMapGridView.h; sourceTree = "<group>"; };
 		1A9985170A12F5987281F41C /* TreeMapGridCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeMapGridCollectionView.m; sourceTree = "<group>"; };
 		1A998588F2D1888F24FB3205 /* DemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
 		1A9985FD32FC316CD8A59C45 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1A9986CEA286E14ED35BD445 /* TreeLayerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerCollectionView.h; sourceTree = "<group>"; };
+		1A99871226B2E1A19C7E17DD /* TreeLayerGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerGridView.h; sourceTree = "<group>"; };
+		1A998779483F20DC1A57D629 /* TreeLayerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerLayout.m; sourceTree = "<group>"; };
+		1A998816059EC21404F289FB /* TreeLayerCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		1A9988173A16B10C2F8B2C7A /* TreeLayerGridLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerGridLocation.h; sourceTree = "<group>"; };
+		1A99887BEE7F303A4E8C40A6 /* TreeLayerGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerGridCell.h; sourceTree = "<group>"; };
 		1A998987B08245D9FFEEEACC /* _TreeInnerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TreeInnerTableView.m; sourceTree = "<group>"; };
 		1A998A06DDBC79711202B089 /* TreeMapGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeMapGridView.m; sourceTree = "<group>"; };
+		1A998A87726C780D4FF5E2B6 /* TreeLayerGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerGridView.m; sourceTree = "<group>"; };
 		1A998ACB0E7E4282BBD5EF17 /* TreeMapGridDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeMapGridDemoViewController.m; sourceTree = "<group>"; };
 		1A998B2BA337BB23A72D751B /* TreeDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeDataConverter.h; sourceTree = "<group>"; };
+		1A998B6307C3F021B7680095 /* TreeLayerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerCollectionViewCell.m; sourceTree = "<group>"; };
 		1A998C0B7E0E9ADF75E089D9 /* TreeTableDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTableDemoViewController.h; sourceTree = "<group>"; };
 		1A998C2BE3B228EB0FAAA63E /* TreeTableDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableDemoViewController.m; sourceTree = "<group>"; };
 		1A998C6DB551D96646D82D2C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1A998CC2E26931EECAD67889 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
 		1A998CD5AAD5F63F8A1E4FA1 /* DemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoView.m; sourceTree = "<group>"; };
+		1A998D01D62C4F9056520A3C /* TreeLayerGridLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerGridLocation.m; sourceTree = "<group>"; };
 		1A998DECCCAA09F3764CCA57 /* TreeMapGridCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeMapGridCollectionView.h; sourceTree = "<group>"; };
+		1A998E1F335888738892E482 /* TreeLayerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeLayerCollectionViewCell.h; sourceTree = "<group>"; };
+		1A998E6DB4A9CD4F307F37FD /* TreeLayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerDemoViewController.m; sourceTree = "<group>"; };
 		1A998E767472E9BBD7F1EAC1 /* TreeMapGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeMapGridLayout.h; sourceTree = "<group>"; };
 		1A998F37ECB4044D58B75321 /* TreeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTableView.m; sourceTree = "<group>"; };
+		1A998FDDCCC06A06F6B3C417 /* TreeLayerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeLayerCollectionView.m; sourceTree = "<group>"; };
 		B5AC12F11E93EC2C00340856 /* TreeCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5AC12F51E93EC2C00340856 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5AC12F71E93EC2C00340856 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +92,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A998308377381F2AF420D49 /* TreeLayerCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1A99819F5BAD7C2225377F9D /* TreeLayerLayout.h */,
+				1A998779483F20DC1A57D629 /* TreeLayerLayout.m */,
+				1A99887BEE7F303A4E8C40A6 /* TreeLayerGridCell.h */,
+				1A9981FE24B037B595C7485B /* TreeLayerGridCell.m */,
+				1A99871226B2E1A19C7E17DD /* TreeLayerGridView.h */,
+				1A998A87726C780D4FF5E2B6 /* TreeLayerGridView.m */,
+				1A9988173A16B10C2F8B2C7A /* TreeLayerGridLocation.h */,
+				1A998D01D62C4F9056520A3C /* TreeLayerGridLocation.m */,
+				1A9986CEA286E14ED35BD445 /* TreeLayerCollectionView.h */,
+				1A998FDDCCC06A06F6B3C417 /* TreeLayerCollectionView.m */,
+				1A998E1F335888738892E482 /* TreeLayerCollectionViewCell.h */,
+				1A998B6307C3F021B7680095 /* TreeLayerCollectionViewCell.m */,
+				1A998816059EC21404F289FB /* TreeLayerCollectionViewLayoutAttributes.h */,
+				1A99807216BB0148E84F5AD0 /* TreeLayerCollectionViewLayoutAttributes.m */,
+			);
+			path = TreeLayerCollectionView;
+			sourceTree = "<group>";
+		};
 		1A998354C8A7140D8CC1E908 /* TreeTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +146,8 @@
 				1A998ACB0E7E4282BBD5EF17 /* TreeMapGridDemoViewController.m */,
 				1A998C0B7E0E9ADF75E089D9 /* TreeTableDemoViewController.h */,
 				1A998C2BE3B228EB0FAAA63E /* TreeTableDemoViewController.m */,
+				1A9980B3570D9AC5395AE66E /* TreeLayerDemoViewController.h */,
+				1A998E6DB4A9CD4F307F37FD /* TreeLayerDemoViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -148,6 +195,7 @@
 				1A99895B9E71251854AF77AF /* Demo */,
 				1A998354C8A7140D8CC1E908 /* TreeTableView */,
 				1A998D3EC3FE31275E445E3E /* TreeNode */,
+				1A998308377381F2AF420D49 /* TreeLayerCollectionView */,
 			);
 			path = TreeCollections;
 			sourceTree = "<group>";
@@ -244,6 +292,14 @@
 				1A9982DAACE33799DE6C9EEB /* TreeDataConverter.m in Sources */,
 				1A9988E766DA504AD6BBAA0C /* _TreeInnerTableView.m in Sources */,
 				1A99858B60ABBFF87C693342 /* TreeNode.m in Sources */,
+				1A998DE26FBB790EA7849C4F /* TreeLayerLayout.m in Sources */,
+				1A9986FCCCCB9F5B8D4F6649 /* TreeLayerGridCell.m in Sources */,
+				1A9983F42279B3186604B827 /* TreeLayerGridView.m in Sources */,
+				1A9985372DE26224B053A042 /* TreeLayerGridLocation.m in Sources */,
+				1A998174EFD2CBF52D2E4CD1 /* TreeLayerCollectionView.m in Sources */,
+				1A998F72B98DFD05B2A702F3 /* TreeLayerCollectionViewCell.m in Sources */,
+				1A99819F76FD58F7669B7BBA /* TreeLayerCollectionViewLayoutAttributes.m in Sources */,
+				1A9984577FB6E1E1F08C7423 /* TreeLayerDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

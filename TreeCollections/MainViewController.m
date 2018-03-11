@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "TreeTableDemoViewController.h"
 #import "TreeMapGridDemoViewController.h"
+#import "TreeLayerDemoViewController.h"
 
 static NSArray *demoList;
 
@@ -25,13 +26,15 @@ static NSDictionary *demoViewClassDict;
     demoList =
             @[
                     @"TreeTableView",
-                    @"TreeMap"
+                    @"TreeMap",
+                    @"TreeLayer-CollectionView"
             ];
 
     demoViewClassDict =
             @{
                     @"TreeTableView": [TreeTableDemoViewController class],
-                    @"TreeMap": [TreeMapGridDemoViewController class]
+                    @"TreeMap": [TreeMapGridDemoViewController class],
+                    @"TreeLayer-CollectionView": [TreeLayerDemoViewController class],
 
             };
 }

@@ -32,7 +32,7 @@
 }
 
 - (void)tableView:(TreeTableView *)tableView didSelectCell:(TreeNode *)treeNode {
-    NSLog(@"select cells: %@: ", treeNode);
+
 }
 
 - (void)tableViewDidScroll:(TreeTableView *)tableView {

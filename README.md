@@ -9,4 +9,4 @@
 <img src="https://raw.github.com/NeoPocketCat/TreeCollections/master/Snapshots/TreeMapView.png" width="640"><br/>
 
 ## TreeLayerCollectionView
-<img src="https://raw.github.com/NeoPocketCat/TreeCollections/master/Snapshots/TreeLayerCollectionView.gif" width="640"><br/>
+<img src="https://raw.github.com/NeoPocketCat/TreeCollections/master/Snapshots/TreeLayerCollectionView.gif" width="320"><br/>

@@ -9,7 +9,9 @@
 
 @interface TreeMapGridDemoViewController () <TreeMapGridViewDataSource, TreeMapGridViewDelegate>
 
+@property(nonatomic, strong) TreeMapGridView *treeMapGridView;
 @property(nonatomic, strong) NSArray *treeNodes;
+@property(nonatomic, strong) NSDictionary *cellWights;
 
 @end
 
@@ -21,33 +23,55 @@
     [super viewDidLoad];
     [self prepareData];
 
-    TreeMapGridView *treeGridView = [[TreeMapGridView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64)];
-    treeGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    treeGridView.delegate = self;
-    treeGridView.dataSource = self;
-    [treeGridView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"__cell__"];
-    treeGridView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:treeGridView];
+    _treeMapGridView = [[TreeMapGridView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64)];
+    _treeMapGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _treeMapGridView.delegate = self;
+    _treeMapGridView.dataSource = self;
+    [_treeMapGridView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"__cell__"];
+    _treeMapGridView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_treeMapGridView];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    CGFloat navigationHeight = self.navigationController.navigationBar.frame.size.height;
+    _treeMapGridView.frame = CGRectMake(0, navigationHeight, self.view.frame.size.width, self.view.frame.size.height - navigationHeight);
+}
+
+
 - (void)prepareData {
+    NSMutableDictionary *cellWights = [NSMutableDictionary dictionary];
+    _cellWights = cellWights;
+
     NSMutableArray *treeNodes = [NSMutableArray array];
     for (NSUInteger i = 0; i < 2; i++) {
-        TreeNode *nodeInLevel0 = [[TreeNode alloc] init];
+        TreeNode *nodeInLevel0 = [[TreeNode alloc] initWithCustomData:[NSString stringWithFormat:@"(%d,%d)", 0, i]];
         nodeInLevel0.expand = YES;
+        cellWights[nodeInLevel0.customData] = @(random());
         NSMutableArray *level1Nodes = [NSMutableArray array];
         for (NSUInteger j = 0; j < 3; j++) {
-            TreeNode *nodeInLevel1 = [[TreeNode alloc] init];
-            nodeInLevel1.expand = j == 1;
+            TreeNode *nodeInLevel1 = [[TreeNode alloc] initWithCustomData:[NSString stringWithFormat:@"(%d,%d)", 1, j]];
+            nodeInLevel1.expand = YES;
             nodeInLevel1.parentNode = nodeInLevel0;
-            if (j != 2) {
-                NSMutableArray *level2Nodes = [NSMutableArray array];
-                for (NSUInteger k = 0; k < 2; k++) {
-                    TreeNode *nodeInLevel2 = [[TreeNode alloc] init];
-                    nodeInLevel2.expand = YES;
-                    nodeInLevel2.parentNode = nodeInLevel1;
-                    [level2Nodes addObject:nodeInLevel2];
+            cellWights[nodeInLevel1.customData] = @(random());
+            NSMutableArray *level2Nodes = [NSMutableArray array];
+            for (NSUInteger k = 0; k < 2; k++) {
+                TreeNode *nodeInLevel2 = [[TreeNode alloc] initWithCustomData:[NSString stringWithFormat:@"(%d,%d)", 2, k]];
+                nodeInLevel2.expand = k == 1;
+                nodeInLevel2.parentNode = nodeInLevel1;
+                cellWights[nodeInLevel2.customData] = @(random());
+                if (k != 2) {
+                    NSMutableArray *level3Nodes = [NSMutableArray array];
+                    for (NSUInteger l = 0; l < 2; l++) {
+                        TreeNode *nodeInLevel3 = [[TreeNode alloc] initWithCustomData:[NSString stringWithFormat:@"(%d,%d)", 3, l]];
+                        nodeInLevel3.expand = YES;
+                        nodeInLevel3.parentNode = nodeInLevel2;
+                        cellWights[nodeInLevel3.customData] = @(random());
+                        [level3Nodes addObject:nodeInLevel3];
+                    }
+                    nodeInLevel2.childNodes = level3Nodes;
                 }
+                [level2Nodes addObject:nodeInLevel2];
                 nodeInLevel1.childNodes = level2Nodes;
             }
             [level1Nodes addObject:nodeInLevel1];
@@ -77,6 +101,7 @@
     }
     label.text = [NSString stringWithFormat:@"%d, %d", treeNode.level,
                                             treeNode.level == 0 ? [_treeNodes indexOfObject:treeNode] : [treeNode.parentNode.childNodes indexOfObject:treeNode]];
+    cell.backgroundColor = [UIColor colorWithRed:((random() % 256) / 255.0f) green:((random() % 256) / 255.0f) blue:((random() % 256) / 255.0f) alpha:1];
     return cell;
 }
 
@@ -91,7 +116,7 @@
 }
 
 - (CGFloat)gridView:(TreeMapGridView *)gridView cellWeightForNode:(TreeNode *)treeNode {
-    return 1;
+    return [_cellWights[treeNode.customData] floatValue];
 }
 
 - (CGFloat)gridView:(TreeMapGridView *)gridView heightAtLevel:(NSUInteger)level {
